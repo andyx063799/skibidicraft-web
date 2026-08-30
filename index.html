@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado del Servidor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- La navegacion la dejo simplificada pq si -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <span class="logo">SkibidiCrafty</span>
+    </div>
+  </header>
+
+  <!-- Aqui esta el contenido principal -->
+  <main class="main-content">
+    <div class="container">
+      <div class="card main-status">
+        <div class="status-header">
+          <h2>Estado del Servidor</h2>
+          <span id="status-indicator" class="badge badge-loading">Cargando...</span>
+        </div>
+        
+        <p id="player-count-text">Obteniendo información...</p>
+
+        <!-- Lista de Jugadores Conectados -->
+        <div class="player-list-container">
+          <h3>Jugadores Conectados</h3>
+          <ul id="player-list" class="player-list">
+            <li class="placeholder">Buscando datos...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de Pagina -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 SkibidiCrafty. Servidor Privado de Amigos.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
